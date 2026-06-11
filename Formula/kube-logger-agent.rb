@@ -1,25 +1,25 @@
 class KubeLoggerAgent < Formula
   desc "Streams Kubernetes logs over WebSocket to the hosted Kube Logger viewer"
   homepage "https://github.com/gtalmor/Kube-Logger"
-  version "0.2.6"
+  version "0.2.7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gtalmor/Kube-Logger/releases/download/v0.2.6/kube-logger-agent-darwin-arm64"
-      sha256 "bbba63dd32cc4299be1c34aa9c3714017aba634b6f4f3769e6212d50d459fd0f"
+      url "https://github.com/gtalmor/Kube-Logger/releases/download/v0.2.7/kube-logger-agent-darwin-arm64"
+      sha256 "ba089a86d2cc2b145aa6b6f7c5df23a94215dcac7d80a050fd2c89cedd7f13e9"
     else
-      url "https://github.com/gtalmor/Kube-Logger/releases/download/v0.2.6/kube-logger-agent-darwin-x64"
-      sha256 "ea597980af9106f07eac2f2c0d3baf5c9a036a64a5118cefe75a9e0023a5c768"
+      url "https://github.com/gtalmor/Kube-Logger/releases/download/v0.2.7/kube-logger-agent-darwin-x64"
+      sha256 "a764ccb45b1698cb4a7e2c529f1ca40f16460269fa342cc0d66ca650958d463b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/gtalmor/Kube-Logger/releases/download/v0.2.6/kube-logger-agent-linux-arm64"
-      sha256 "c65ae3cab91fdd3de0e841cd8e8c24ca45ff52e261fe703fb05d9762c615b97f"
+      url "https://github.com/gtalmor/Kube-Logger/releases/download/v0.2.7/kube-logger-agent-linux-arm64"
+      sha256 "e28c137beef0130e96d3f0adbeded3624ca1f8d4cbe122bb488caf079d71a89d"
     else
-      url "https://github.com/gtalmor/Kube-Logger/releases/download/v0.2.6/kube-logger-agent-linux-x64"
-      sha256 "04e894332e7dc8e69055d84f5398ee54a6e64d1b7628e0f82a31a0ced042aaa7"
+      url "https://github.com/gtalmor/Kube-Logger/releases/download/v0.2.7/kube-logger-agent-linux-x64"
+      sha256 "3d134d2117b5aa703d81e96b9d50f0eed4b4db0272a255a77eff9474b9f9bb9d"
     end
   end
 
